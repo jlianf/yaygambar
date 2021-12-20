@@ -1,4 +1,4 @@
-package yay.codee;
+package com.yay.gambar;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -21,7 +21,6 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.yay.gambar.WallpaperModel;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -32,10 +31,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import yay.gambar.R;
+
 public class MainActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
-    yay.codee.WallpaperAdapter wallpaperAdapter;
+    yay.gambar.WallpaperAdapter wallpaperAdapter;
     List<WallpaperModel> wallpaperModelList;
     int pageNumber = 1;
 
@@ -50,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.recyclerView);
         wallpaperModelList = new ArrayList<>();
-        wallpaperAdapter = new yay.codee.WallpaperAdapter(this,wallpaperModelList);
+        wallpaperAdapter = new yay.gambar.WallpaperAdapter(this,wallpaperModelList);
 
         recyclerView.setAdapter(wallpaperAdapter);
 

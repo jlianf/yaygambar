@@ -18,6 +18,8 @@ import com.github.chrisbanes.photoview.PhotoView;
 
 import java.io.IOException;
 
+import yay.gambar.R;
+
 
 public class FullScreenWallpaper extends AppCompatActivity {
     String originalUrl="";

@@ -1,4 +1,4 @@
-package com.yay.gambar;
+package yay.gambar;
 
 import android.content.Context;
 import android.content.Intent;
@@ -16,7 +16,7 @@ import com.yay.gambar.WallpaperModel;
 
 import java.util.List;
 
-import yay.codee.R;
+import yay.gambar.R;
 
 public class WallpaperAdapter extends RecyclerView.Adapter<WallpaperViewHolder> {
 
