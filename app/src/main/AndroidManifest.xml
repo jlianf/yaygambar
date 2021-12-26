@@ -12,18 +12,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="yay.gambar.FullScreenWallpaper"></activity>
-        <activity android:name="yay.gambar.MainActivity">
+        <activity android:name="com.yay.gambar.FullScreenWallpaper"/>
+            <activity android:name="com.yay.gambar.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+            </activity>
+
 
         <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="true"/>
+            android:value="ca-app-pub-3940256099942544~3347511713"></meta-data>
     </application>
 </manifest>
