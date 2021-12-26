@@ -78,7 +78,6 @@ public class MainActivity extends AppCompatActivity {
                         // The mInterstitialAd reference will be null until
                         // an ad is loaded.
                         mInterstitialAd = interstitialAd;
-                        Log.i(TAG, "onAdLoaded");
 
                         mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback() {
                             @Override
@@ -101,7 +100,6 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
                         // Handle the error
-                        Log.i(TAG, loadAdError.getMessage());
                         mInterstitialAd = null;
 
                         if (mInterstitialAd != null) {
